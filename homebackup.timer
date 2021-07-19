@@ -1,0 +1,10 @@
+[Unit]
+Description=weekly backup service for Home Backup
+
+[Timer]
+# Run once per week on Friday at 06:00
+OnCalendar=Fri 6:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,12 @@
+#!/bin/bash
+[Unit]
+Description=Start Home Backup
+
+[Service]
+# Type=oneshot
+# Nice=19
+# IOSchedulingClass=idle
+ExecStart=/usr/bin/gnome-terminal -e /usr/local/bin/homebackup.sh
+
+[Install]
+WantedBy=graphical.target
