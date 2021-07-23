@@ -8,7 +8,7 @@ After=network-online.target
 # Type=oneshot
 # Nice=19
 # IOSchedulingClass=idle
-ExecStart=/usr/bin/gnome-terminal -- /usr/local/bin/homebackup-service.sh
+ExecStart=/usr/bin/gnome-terminal -- /usr/local/bin/homebackup.sh
 
 [Install]
 WantedBy=graphical.target

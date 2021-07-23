@@ -12,7 +12,7 @@ then
   mkdir /home/$USER/.config/systemd/user
   cp homebackup.service /home/$USER/.config/systemd/user/homebackup.service
   cp homebackup.timer /home/$USER/.config/systemd/user/homebackup.timer
-  sudo systemctl daemon-reload
+  systemctl --user daemon-reload
   echo "Applikation und Servicefiles kopiert."
   mkdir /home/$USER/homebackup
   cp -n homebackup.conf /home/$USER/homebackup/
