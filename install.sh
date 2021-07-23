@@ -6,6 +6,8 @@ if [[ $REPLY =~ ^[Jj]$ ]]
 then
   sudo cp homebackup.sh /usr/local/bin/homebackup.sh
   sudo chmod +x /usr/local/bin/homebackup.sh
+  sudo cp homebackup-service.sh /usr/local/bin/homebackup-service.sh
+  sudo chmod +x /usr/local/bin/homebackup-service.sh
   mkdir /home/$USER/.config/systemd
   mkdir /home/$USER/.config/systemd/user
   cp homebackup.service /home/$USER/.config/systemd/user/homebackup.service
