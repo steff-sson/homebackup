@@ -8,8 +8,8 @@ then
   sudo chmod +x /usr/local/bin/homebackup.sh
   mkdir /home/$USER/.config/systemd
   mkdir /home/$USER/.config/systemd/user
-  sudo cp homebackup.service /home/$USER/.config/systemd/user/homebackup.service
-  sudo cp homebackup.timer /home/$USER/.config/systemd/user/homebackup.timer
+  cp homebackup.service /home/$USER/.config/systemd/user/homebackup.service
+  cp homebackup.timer /home/$USER/.config/systemd/user/homebackup.timer
   sudo systemctl daemon-reload
   echo "Applikation und Servicefiles kopiert."
   mkdir /home/$USER/homebackup
